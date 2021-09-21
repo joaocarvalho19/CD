@@ -1,0 +1,70 @@
+﻿Message Broker
+
+
+
+
+Feito por: João Carvalho(89059), João Pedro Vasconcelos(89022)
+Unidade Curricular: Computação Distribuída
+
+
+
+
+Protocolo
+
+
+ O protocolo usado neste projeto foi o Publish-Subscribe, que consiste sucintamente na publicação de mensagens por parte dos Producers, sendo as mesmas recebidas pelos Consumers. Contudo estas entidades não comunicam diretamente pois é usado um broker intermediário que gere as mensagens e outros recursos.
+
+
+
+
+ Estruturas de dados
+
+
+ Para a gestão das mensagens foram usadas três estruturas de dados que permitiam guardar dados relevantes no broker para tornar o processo mais eficiente e desacoplado. As estruturas foram as seguintes:
+
+
+* topics - dicionário com a chave sendo um determinado tópico subscrito e o valor é uma lista de tuplos contendo o address e o tipo de serialização do Consumer que subscreveu ao tópico.
+
+
+* last_message - dicionário com a chave sendo um determinado tópico e o valor a última mensagem enviada para esse tópico.
+
+
+* users - dicionário com a chave sendo um address de um cliente e o valor o seu tipo de serialização.
+
+
+
+
+ Formato das Mensagens
+
+
+O protocolo das mensagens consiste em mensagens de quatro tipos:
+
+
+* Subscrição - com o comando do tipo “SUBSCRIPTIION”, o Consumer subscreve um tópico.
+
+
+* Publicação - com o comando do tipo “PUBLICATION”, o Producer publica uma mensagem num determinado tópico.
+
+
+* Pedido de Listagem - com o comando do tipo “LIST_REQ”, o Consumer pede uma lista com todos os tópicos existentes.
+
+
+* Cancelamento de subscrição - com o comando do tipo “CANCEL_SUBS”, o Consumer cancela a subscrição de um tópico.
+
+
+
+
+  Middleware
+
+
+  No sistema é usado uma camada middleware com finalidade de unificar os serviços do Producer e Consumer e facilitar a comunicação com o broker. No middleware sempre que uma entidade se conecta é enviada uma mensagem ao broker a dar a conhecer o seu tipo de serialização e, se se tratar de um Consumer, envia também uma mensagem de subscrição do seu tópico associado à queue.
+ Além disso é possível fazer encode e decode das mensagens a enviar de acordo com o seu tipo de serialização.
+
+
+
+
+ Broker 
+
+
+ No que diz respeito ao broker, sempre que aceita um ligação guarda o address da entidade e seu tipo de serialização.
+ A principal função do broker é de read(), é nesta função que vai gerir todas as mensagens recebidas do middleware dos tipos acima descritos. A principal função do broker é conseguir dinâmica e transparência na comunicação entre entidades pelos seus tipos diferentes de serialização, assim, e tal que no middleware, têm funções para encode e decode das mensagens dos diferentes tipos.

@@ -1,0 +1,89 @@
+INFO:root:Accepted <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60378)> from ('127.0.0.1', 60378)
+DEBUG:root:Received: {'command': 'register', 'user': 'Foo'}
+INFO:root:Accepted <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60379)> from ('127.0.0.1', 60379)
+DEBUG:root:Received: {'command': 'register', 'user': 'Bar'}
+DEBUG:root:Received: {'command': 'message', 'message': 'Olá Mundo', 'ts': 1618001505}
+DEBUG:root:echoing 'Olá Mundo' to Foo
+DEBUG:root:echoing 'Olá Mundo' to Bar
+DEBUG:root:Received: {'command': 'message', 'message': 'Hello World', 'ts': 1618001505}
+DEBUG:root:echoing 'Hello World' to Foo
+DEBUG:root:echoing 'Hello World' to Bar
+INFO:root:Closing <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60379)>
+INFO:root:Closing <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60378)>
+INFO:root:Accepted <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60380)> from ('127.0.0.1', 60380)
+DEBUG:root:Received: {'command': 'register', 'user': 'Foo'}
+INFO:root:Accepted <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60381)> from ('127.0.0.1', 60381)
+DEBUG:root:Received: {'command': 'register', 'user': 'Bar'}
+DEBUG:root:Received: {'command': 'message', 'message': 'Olá Mundo', 'ts': 1618001508}
+DEBUG:root:echoing 'Olá Mundo' to Foo
+DEBUG:root:echoing 'Olá Mundo' to Bar
+DEBUG:root:Received: {'command': 'message', 'message': 'Hello World', 'ts': 1618001508}
+DEBUG:root:echoing 'Hello World' to Foo
+DEBUG:root:echoing 'Hello World' to Bar
+DEBUG:root:Received: {'command': 'message', 'message': 'How are you?', 'ts': 1618001508}
+DEBUG:root:echoing 'How are you?' to Foo
+DEBUG:root:echoing 'How are you?' to Bar
+DEBUG:root:Received: {'command': 'message', 'message': 'Are you new around here?', 'ts': 1618001508}
+DEBUG:root:echoing 'Are you new around here?' to Foo
+DEBUG:root:echoing 'Are you new around here?' to Bar
+DEBUG:root:Received: {'command': 'message', 'message': 'Hope you enjoy your stay', 'ts': 1618001508}
+DEBUG:root:echoing 'Hope you enjoy your stay' to Foo
+DEBUG:root:echoing 'Hope you enjoy your stay' to Bar
+DEBUG:root:Received: {'command': 'message', 'message': 'You are awesome!', 'ts': 1618001508}
+DEBUG:root:echoing 'You are awesome!' to Foo
+DEBUG:root:echoing 'You are awesome!' to Bar
+INFO:root:Closing <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60381)>
+INFO:root:Closing <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60380)>
+INFO:root:Accepted <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60382)> from ('127.0.0.1', 60382)
+DEBUG:root:Received: {'command': 'register', 'user': 'Foo'}
+INFO:root:Accepted <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60383)> from ('127.0.0.1', 60383)
+DEBUG:root:Received: {'command': 'register', 'user': 'Bar'}
+DEBUG:root:Received: {'command': 'message', 'message': 'Hello!', 'ts': 1618001511}
+DEBUG:root:echoing 'Hello!' to Foo
+DEBUG:root:echoing 'Hello!' to Bar
+DEBUG:root:Received: {'command': 'message', 'message': 'Welcome aboard', 'ts': 1618001511}
+DEBUG:root:echoing 'Welcome aboard' to Foo
+DEBUG:root:echoing 'Welcome aboard' to Bar
+DEBUG:root:Received: {'command': 'message', 'message': 'Who are you?', 'ts': 1618001511}
+DEBUG:root:echoing 'Who are you?' to Foo
+DEBUG:root:echoing 'Who are you?' to Bar
+DEBUG:root:Received: {'command': 'message', 'message': "I'm Joe", 'ts': 1618001511}
+DEBUG:root:echoing "I'm Joe" to Foo
+DEBUG:root:echoing "I'm Joe" to Bar
+DEBUG:root:Received: {'command': 'message', 'message': 'Nice to meet you Joe', 'ts': 1618001511}
+DEBUG:root:echoing 'Nice to meet you Joe' to Foo
+DEBUG:root:echoing 'Nice to meet you Joe' to Bar
+DEBUG:root:Received: {'command': 'message', 'message': 'Cya around', 'ts': 1618001511}
+DEBUG:root:echoing 'Cya around' to Foo
+DEBUG:root:echoing 'Cya around' to Bar
+INFO:root:Closing <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60383)>
+INFO:root:Closing <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60382)>
+INFO:root:Accepted <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60384)> from ('127.0.0.1', 60384)
+DEBUG:root:Received: {'command': 'register', 'user': 'Foo'}
+INFO:root:Accepted <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60386)> from ('127.0.0.1', 60386)
+DEBUG:root:Received: {'command': 'register', 'user': 'Bar'}
+DEBUG:root:Received: {'command': 'message', 'message': 'Hello!', 'ts': 1618001513}
+DEBUG:root:echoing 'Hello!' to Foo
+DEBUG:root:echoing 'Hello!' to Bar
+DEBUG:root:Received: {'command': 'join', 'channel': '#cd'}
+DEBUG:root:Received: {'command': 'message', 'message': 'no one is here...', 'ts': 1618001513}
+DEBUG:root:echoing 'no one is here...' to Foo
+INFO:root:Closing <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60386)>
+INFO:root:Closing <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60384)>
+INFO:root:Accepted <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60387)> from ('127.0.0.1', 60387)
+DEBUG:root:Received: {'command': 'register', 'user': 'Foo'}
+INFO:root:Accepted <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60388)> from ('127.0.0.1', 60388)
+DEBUG:root:Received: {'command': 'register', 'user': 'Bar'}
+DEBUG:root:Received: {'command': 'join', 'channel': '#c1'}
+DEBUG:root:Received: {'command': 'join', 'channel': '#c2'}
+DEBUG:root:Received: {'command': 'message', 'message': 'Hello darkness, my old friend', 'ts': 1618001518}
+DEBUG:root:echoing 'Hello darkness, my old friend' to Foo
+DEBUG:root:Received: {'command': 'join', 'channel': '#c2'}
+DEBUG:root:Received: {'command': 'message', 'message': "I've come to talk with you again", 'ts': 1618001518}
+DEBUG:root:echoing "I've come to talk with you again" to Foo
+DEBUG:root:echoing "I've come to talk with you again" to Bar
+DEBUG:root:Received: {'command': 'join', 'channel': '#c1'}
+DEBUG:root:Received: {'command': 'message', 'message': 'Because a vision softly creeping', 'ts': 1618001518}
+DEBUG:root:echoing 'Because a vision softly creeping' to Foo
+INFO:root:Closing <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60388)>
+INFO:root:Closing <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 1234), raddr=('127.0.0.1', 60387)>

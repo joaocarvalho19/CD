@@ -1,0 +1,16 @@
+DEBUG:root:Received: {'command': 'message', 'message': 'Olá Mundo', 'ts': 1618001505}
+DEBUG:root:Received: {'command': 'message', 'message': 'Hello World', 'ts': 1618001505}
+DEBUG:root:Received: {'command': 'message', 'message': 'Olá Mundo', 'ts': 1618001508}
+DEBUG:root:Received: {'command': 'message', 'message': 'Hello World', 'ts': 1618001508}
+DEBUG:root:Received: {'command': 'message', 'message': 'How are you?', 'ts': 1618001508}
+DEBUG:root:Received: {'command': 'message', 'message': 'Are you new around here?', 'ts': 1618001508}
+DEBUG:root:Received: {'command': 'message', 'message': 'Hope you enjoy your stay', 'ts': 1618001508}
+DEBUG:root:Received: {'command': 'message', 'message': 'You are awesome!', 'ts': 1618001508}
+DEBUG:root:Received: {'command': 'message', 'message': 'Hello!', 'ts': 1618001511}
+DEBUG:root:Received: {'command': 'message', 'message': 'Welcome aboard', 'ts': 1618001511}
+DEBUG:root:Received: {'command': 'message', 'message': 'Who are you?', 'ts': 1618001511}
+DEBUG:root:Received: {'command': 'message', 'message': "I'm Joe", 'ts': 1618001511}
+DEBUG:root:Received: {'command': 'message', 'message': 'Nice to meet you Joe', 'ts': 1618001511}
+DEBUG:root:Received: {'command': 'message', 'message': 'Cya around', 'ts': 1618001511}
+DEBUG:root:Received: {'command': 'message', 'message': 'Hello!', 'ts': 1618001513}
+DEBUG:root:Received: {'command': 'message', 'message': "I've come to talk with you again", 'ts': 1618001518}
